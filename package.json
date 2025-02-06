@@ -5,7 +5,7 @@
   "main": "./dist/eox-ui.umd.cjs",
   "module": "./dist/eox-ui.js",
   "exports": {
-    "./style.css": "./dist/my-lib.css"
+    "./style.css": "./dist/style.css"
   },
   "files": [
     "assets",

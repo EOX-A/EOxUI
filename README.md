@@ -19,7 +19,7 @@ The JS bundle is only needed for components that require JS.
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@eox/ui/dist/style.css" />
-<script type="module" src="https://unpkg.com/@eox/ui"></script>
+<script src="https://unpkg.com/@eox/ui"></script>
 ```
 
 The JS bundle is only needed for components that require JS.
@@ -44,6 +44,32 @@ export default createVuetify({
 });
 ```
 
-## Shadow DOM
+## Caveats
+
+### Flash of unstyled content (FOUC)
+
+If you're experiencing FOUC, then you're probably having some static/non-bundling setup. This is somewhat expected, since the HTML will always load faster than JS/CSS bundles (and especially fonts), probably most noticeable on first page load (browser cache should help a bit).
+
+To mitigate e.g. the wrong font flashing, use something like:
+
+```html
+<style>
+  body {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+<script>
+  document.fonts.onloadingdone = () => {
+    document.body.style.opacity = 1;
+  };
+
+  (async () => {
+    await document.fonts.load("16px Inter");
+  })();
+</script>
+```
+
+### Shadow DOM
 
 Need to include `@eox/ui/style.css` also "outside" in the light DOM (for vars and fonts).

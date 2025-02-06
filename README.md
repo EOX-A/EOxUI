@@ -18,7 +18,7 @@ The JS bundle is only needed for components that require JS.
 ## CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@eox/ui/style.css" />
+<link rel="stylesheet" href="https://unpkg.com/@eox/ui/dist/style.css" />
 <script type="module" src="https://unpkg.com/@eox/ui"></script>
 ```
 
@@ -34,8 +34,8 @@ npm i @eox/ui
 // src/plugins/vuetify.js
 
 import "vuetify/styles";
-import "@eox/ui/lib/vuetify/style.css";
-import { eox } from "@eox/ui/lib/vuetify/blueprint";
+import "@eox/ui/vuetify/style.css";
+import { eox } from "@eox/ui/vuetify/blueprint.js";
 
 import { createVuetify } from "vuetify";
 

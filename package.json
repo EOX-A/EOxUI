@@ -5,7 +5,14 @@
   "main": "./dist/eox-ui.umd.cjs",
   "module": "./dist/eox-ui.js",
   "exports": {
-    "./style.css": "./dist/style.css"
+    ".": {
+      "import": "./dist/eox-ui.js",
+      "require": "./dist/eox-ui.umd.cjs"
+    },
+    "./vuetify/*": {
+      "import": "./lib/vuetify/*",
+      "require": "./lib/vuetify/*"
+    }
   },
   "files": [
     "assets",

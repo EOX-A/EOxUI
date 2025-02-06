@@ -1,0 +1,111 @@
+:root {
+  --size: 16px;
+  --font: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Noto Sans, Arial, sans-serif;
+  --font-icon: "Material Design Icons";
+  --speed1: 0.1s;
+  --speed2: 0.2s;
+  --speed3: 0.3s;
+  --speed4: 0.4s;
+  --active: rgb(128 128 128 / 0.192);
+  --overlay: rgb(0 0 0 / 0.5);
+  --elevate1: 0 0.125rem 0.125rem 0 rgb(0 0 0 / 0.32);
+  --elevate2: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 0.4);
+  --elevate3: 0 0.375rem 0.75rem 0 rgb(0 0 0 / 0.48);
+  --top: env(safe-area-inset-top);
+  --bottom: env(safe-area-inset-bottom);
+  --left: env(safe-area-inset-left);
+  --right: env(safe-area-inset-right);
+}
+
+:root,
+body.light {
+  --primary: rgb(var(--eox-theme-light-primary));
+  --on-primary: rgb(var(--eox-theme-light-on-primary));
+  --primary-container: rgb(var(--eox-theme-light-primary-container));
+  --on-primary-container: #001d36;
+  --secondary: rgb(var(--eox-theme-light-secondary));
+  --on-secondary: rgb(var(--eox-theme-light-on-secondary));
+  --secondary-container: #d7e3f7;
+  --on-secondary-container: #101c2b;
+  --tertiary: rgb(var(--eox-theme-light-tertiary));
+  --on-tertiary: rgb(var(--eox-theme-light-on-tertiary));
+  --tertiary-container: #f2daff;
+  --on-tertiary-container: #251431;
+  --error: rgb(var(--eox-theme-light-error));
+  --on-error: rgb(var(--eox-theme-light-on-error));
+  --error-container: #ffdad6;
+  --on-error-container: #410002;
+  --background: rgb(var(--eox-theme-light-background));
+  --on-background: #1a1c1e;
+  --surface: rgb(var(--eox-theme-light-surface));
+  --on-surface: rgb(var(--eox-theme-light-on-surface));
+  --surface-variant: #dfe2eb;
+  --on-surface-variant: #43474e;
+  --outline: rgb(var(--eox-theme-light-outline));
+  --outline-variant: rgb(var(--eox-theme-light-outline-variant));
+  --shadow: #000000;
+  --scrim: #000000;
+  --inverse-surface: #2f3033;
+  --inverse-on-surface: #f1f0f4;
+  --inverse-primary: #9ecaff;
+  --surface-dim: rgb(var(--eox-theme-light-surface-dim));
+  --surface-bright: rgb(var(--eox-theme-light-surface-bright));
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f4f3f7;
+  --surface-container: #eeedf1;
+  --surface-container-high: #e8e8eb;
+  --surface-container-highest: #e2e2e6;
+}
+body.dark {
+  --primary: rgb(var(--eox-theme-light-theme-primary));
+  --on-primary: rgb(var(--eox-theme-light-theme-on-primary));
+  --primary-container: rgb(var(--eox-theme-light-theme-primary-container));
+  --on-primary-container: rgb(
+    var(--eox-theme-light-theme-on-primary-container)
+  );
+  --secondary: rgb(var(--eox-theme-light-theme-secondary));
+  --on-secondary: rgb(var(--eox-theme-light-theme-on-secondary));
+  --secondary-container: rgb(var(--eox-theme-light-theme-secondary-container));
+  --on-secondary-container: rgb(
+    var(--eox-theme-light-theme-on-secondary-container)
+  );
+  --tertiary: rgb(var(--eox-theme-light-theme-tertiary));
+  --on-tertiary: rgb(var(--eox-theme-light-theme-on-tertiary));
+  --tertiary-container: rgb(var(--eox-theme-light-theme-tertiary-container));
+  --on-tertiary-container: rgb(
+    var(--eox-theme-light-theme-on-tertiary-container)
+  );
+  --error: rgb(var(--eox-theme-light-theme-error));
+  --on-error: rgb(var(--eox-theme-light-theme-on-error));
+  --error-container: rgb(var(--eox-theme-light-theme-error-container));
+  --on-error-container: rgb(var(--eox-theme-light-theme-on-error-container));
+  --background: rgb(var(--eox-theme-light-theme-background));
+  --on-background: rgb(var(--eox-theme-light-theme-on-background));
+  --surface: rgb(var(--eox-theme-light-theme-surface));
+  --on-surface: rgb(var(--eox-theme-light-theme-on-surface));
+  --surface-variant: rgb(var(--eox-theme-light-theme-surface-variant));
+  --on-surface-variant: rgb(var(--eox-theme-light-theme-on-surface-variant));
+  --outline: rgb(var(--eox-theme-light-theme-outline));
+  --outline-variant: rgb(var(--eox-theme-light-theme-outline-variant));
+  --shadow: rgb(var(--eox-theme-light-theme-shadow));
+  --scrim: rgb(var(--eox-theme-light-theme-scrim));
+  --inverse-surface: rgb(var(--eox-theme-light-theme-inverse-surface));
+  --inverse-on-surface: rgb(var(--eox-theme-light-theme-inverse-on-surface));
+  --inverse-primary: rgb(var(--eox-theme-light-theme-inverse-primary));
+  --surface-dim: rgb(var(--eox-theme-light-theme-surface-dim));
+  --surface-bright: rgb(var(--eox-theme-light-theme-surface-bright));
+  --surface-container-lowest: rgb(
+    var(--eox-theme-light-theme-surface-container-lowest)
+  );
+  --surface-container-low: rgb(
+    var(--eox-theme-light-theme-surface-container-low)
+  );
+  --surface-container: rgb(var(--eox-theme-light-theme-surface-container));
+  --surface-container-high: rgb(
+    var(--eox-theme-light-theme-surface-container-high)
+  );
+  --surface-container-highest: rgb(
+    var(--eox-theme-light-theme-surface-container-highest)
+  );
+}

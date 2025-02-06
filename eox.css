@@ -1,9 +1,0 @@
-/*
-Main entrypoint for style sheet
-Used for static sites and simple apps
-*/
-
-@import url(./style/fonts.css);
-@import url(./assets/beercss/beer.css);
-@import url(./style/variables.css);
-@import url(./style/custom.css);

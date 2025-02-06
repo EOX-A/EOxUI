@@ -1,0 +1,8 @@
+/*
+Main entrypoint for style sheet
+Used for static sites and simple apps
+*/
+
+@import url(../assets/beercss/beer.min.css);
+@import url(./variables.css);
+@import url(./custom.css);

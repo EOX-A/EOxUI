@@ -1,0 +1,25 @@
+{
+  "name": "@eox/ui",
+  "version": "0.0.0",
+  "description": "EOX UI styles & tools",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "clone:beercss": "rm -rf assets/beercss && git clone --depth 1 --branch v3.8.0 https://github.com/beercss/beercss.git assets/tmp && cp -r assets/tmp/dist/cdn assets/beercss && rm -rf assets/tmp",
+    "format": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EOX-A/EOxUI.git"
+  },
+  "author": "EOX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EOX-A/EOxUI/issues"
+  },
+  "homepage": "https://github.com/EOX-A/EOxUI#readme",
+  "devDependencies": {
+    "@eox/eslint-config": "^2.0.0"
+  }
+}

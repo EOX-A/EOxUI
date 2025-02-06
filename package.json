@@ -7,6 +7,12 @@
   "exports": {
     "./style.css": "./dist/my-lib.css"
   },
+  "files": [
+    "assets",
+    "dist",
+    "lib",
+    "style"
+  ],
   "type": "module",
   "scripts": {
     "build": "vite build",

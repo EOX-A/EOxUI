@@ -58,54 +58,52 @@ body.light {
   --surface-container-highest: #e2e2e6;
 }
 body.dark {
-  --primary: rgb(var(--eox-theme-light-theme-primary));
-  --on-primary: rgb(var(--eox-theme-light-theme-on-primary));
-  --primary-container: rgb(var(--eox-theme-light-theme-primary-container));
-  --on-primary-container: rgb(
-    var(--eox-theme-light-theme-on-primary-container)
-  );
-  --secondary: rgb(var(--eox-theme-light-theme-secondary));
-  --on-secondary: rgb(var(--eox-theme-light-theme-on-secondary));
-  --secondary-container: rgb(var(--eox-theme-light-theme-secondary-container));
+  --primary: rgb(var(--eox-theme-dark-theme-primary));
+  --on-primary: rgb(var(--eox-theme-dark-theme-on-primary));
+  --primary-container: rgb(var(--eox-theme-dark-theme-primary-container));
+  --on-primary-container: rgb(var(--eox-theme-dark-theme-on-primary-container));
+  --secondary: rgb(var(--eox-theme-dark-theme-secondary));
+  --on-secondary: rgb(var(--eox-theme-dark-theme-on-secondary));
+  --secondary-container: rgb(var(--eox-theme-dark-theme-secondary-container));
   --on-secondary-container: rgb(
-    var(--eox-theme-light-theme-on-secondary-container)
+    var(--eox-theme-dark-theme-on-secondary-container)
   );
-  --tertiary: rgb(var(--eox-theme-light-theme-tertiary));
-  --on-tertiary: rgb(var(--eox-theme-light-theme-on-tertiary));
-  --tertiary-container: rgb(var(--eox-theme-light-theme-tertiary-container));
+  --tertiary: rgb(var(--eox-theme-dark-theme-tertiary));
+  --on-tertiary: rgb(var(--eox-theme-dark-theme-on-tertiary));
+  --tertiary-container: rgb(var(--eox-theme-dark-theme-tertiary-container));
   --on-tertiary-container: rgb(
-    var(--eox-theme-light-theme-on-tertiary-container)
+    var(--eox-theme-dark-theme-on-tertiary-container)
   );
-  --error: rgb(var(--eox-theme-light-theme-error));
-  --on-error: rgb(var(--eox-theme-light-theme-on-error));
-  --error-container: rgb(var(--eox-theme-light-theme-error-container));
-  --on-error-container: rgb(var(--eox-theme-light-theme-on-error-container));
-  --background: rgb(var(--eox-theme-light-theme-background));
-  --on-background: rgb(var(--eox-theme-light-theme-on-background));
-  --surface: rgb(var(--eox-theme-light-theme-surface));
-  --on-surface: rgb(var(--eox-theme-light-theme-on-surface));
-  --surface-variant: rgb(var(--eox-theme-light-theme-surface-variant));
-  --on-surface-variant: rgb(var(--eox-theme-light-theme-on-surface-variant));
-  --outline: rgb(var(--eox-theme-light-theme-outline));
-  --outline-variant: rgb(var(--eox-theme-light-theme-outline-variant));
-  --shadow: rgb(var(--eox-theme-light-theme-shadow));
-  --scrim: rgb(var(--eox-theme-light-theme-scrim));
-  --inverse-surface: rgb(var(--eox-theme-light-theme-inverse-surface));
-  --inverse-on-surface: rgb(var(--eox-theme-light-theme-inverse-on-surface));
-  --inverse-primary: rgb(var(--eox-theme-light-theme-inverse-primary));
-  --surface-dim: rgb(var(--eox-theme-light-theme-surface-dim));
-  --surface-bright: rgb(var(--eox-theme-light-theme-surface-bright));
+  --error: rgb(var(--eox-theme-dark-theme-error));
+  --on-error: rgb(var(--eox-theme-dark-theme-on-error));
+  --error-container: rgb(var(--eox-theme-dark-theme-error-container));
+  --on-error-container: rgb(var(--eox-theme-dark-theme-on-error-container));
+  --background: rgb(var(--eox-theme-dark-theme-background));
+  --on-background: rgb(var(--eox-theme-dark-theme-on-background));
+  --surface: rgb(var(--eox-theme-dark-theme-surface));
+  --on-surface: rgb(var(--eox-theme-dark-theme-on-surface));
+  --surface-variant: rgb(var(--eox-theme-dark-theme-surface-variant));
+  --on-surface-variant: rgb(var(--eox-theme-dark-theme-on-surface-variant));
+  --outline: rgb(var(--eox-theme-dark-theme-outline));
+  --outline-variant: rgb(var(--eox-theme-dark-theme-outline-variant));
+  --shadow: rgb(var(--eox-theme-dark-theme-shadow));
+  --scrim: rgb(var(--eox-theme-dark-theme-scrim));
+  --inverse-surface: rgb(var(--eox-theme-dark-theme-inverse-surface));
+  --inverse-on-surface: rgb(var(--eox-theme-dark-theme-inverse-on-surface));
+  --inverse-primary: rgb(var(--eox-theme-dark-theme-inverse-primary));
+  --surface-dim: rgb(var(--eox-theme-dark-theme-surface-dim));
+  --surface-bright: rgb(var(--eox-theme-dark-theme-surface-bright));
   --surface-container-lowest: rgb(
-    var(--eox-theme-light-theme-surface-container-lowest)
+    var(--eox-theme-dark-theme-surface-container-lowest)
   );
   --surface-container-low: rgb(
-    var(--eox-theme-light-theme-surface-container-low)
+    var(--eox-theme-dark-theme-surface-container-low)
   );
-  --surface-container: rgb(var(--eox-theme-light-theme-surface-container));
+  --surface-container: rgb(var(--eox-theme-dark-theme-surface-container));
   --surface-container-high: rgb(
-    var(--eox-theme-light-theme-surface-container-high)
+    var(--eox-theme-dark-theme-surface-container-high)
   );
   --surface-container-highest: rgb(
-    var(--eox-theme-light-theme-surface-container-highest)
+    var(--eox-theme-dark-theme-surface-container-highest)
   );
 }

@@ -9,5 +9,4 @@ Based on Material design 3
 - remove all vars that don't start with `--v-theme`
 - remove all vars that include `-multiplier`
 - rename `--v-theme-` to `--eox-theme-light-`
-- add a `rgb()` wrapper to all values
 - for light theme, copy vars into [light.css](./light.css), for dark into [dark.css](./dark.css)

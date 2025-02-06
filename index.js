@@ -1,2 +1,2 @@
 import "./style/eox.css";
-import "beercss";
+import "./assets/beercss/beer.js";

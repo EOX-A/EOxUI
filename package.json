@@ -12,7 +12,8 @@
     "./vuetify/*": {
       "import": "./lib/vuetify/*",
       "require": "./lib/vuetify/*"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "files": [
     "assets",

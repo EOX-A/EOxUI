@@ -24,7 +24,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "clone:beercss": "rm -rf assets/beercss && git clone --depth 1 --branch v3.8.0 https://github.com/beercss/beercss.git assets/tmp && cp -r assets/tmp/dist/cdn assets/beercss && rm -rf assets/tmp",
+    "clone:beercss": "rm -rf assets/beercss && git clone --depth 1 --branch v3.9.0 https://github.com/beercss/beercss.git assets/tmp && cp -r assets/tmp/dist/cdn assets/beercss && rm -rf assets/tmp",
     "scope:beercss": "sed -i 's/--/--eox-/g' ./assets/beercss/beer.min.css",
     "format": "npx prettier --write ."
   },

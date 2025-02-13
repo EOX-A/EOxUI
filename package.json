@@ -24,8 +24,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "clone:beercss": "rm -rf assets/beercss && git clone --depth 1 --branch v3.9.0 https://github.com/beercss/beercss.git assets/tmp && cp -r assets/tmp/dist/cdn assets/beercss && rm -rf assets/tmp",
-    "scope:beercss": "sed -i 's/--/--eox-/g' ./assets/beercss/beer.min.css",
+    "clone:beercss": "rm -rf assets/beercss && git clone --depth 1 --branch v3.9.0 https://github.com/beercss/beercss.git assets/tmp && cp -r assets/tmp/dist/cdn assets/beercss && rm -rf assets/tmp && rm assets/beercss/beer.min.css && rm assets/beercss/beer.min.js && rm assets/beercss/*.woff2 && cp assets/material-symbols-outlined.woff2 assets/beercss/material-symbols-outlined.woff2",
     "format": "npx prettier --write ."
   },
   "repository": {

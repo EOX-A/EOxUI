@@ -1,1 +1,0 @@
-clone the repo, then remove fonts from folder & css file

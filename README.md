@@ -8,8 +8,11 @@ Collection of styles and snippets for the EOX Design System. Includes JS, CSS an
 npm i @eox/ui
 ```
 
+```css
+@import url("@eox/ui/style.css");
+```
+
 ```js
-import "@eox/ui/style.css";
 import "@eox/ui";
 ```
 
@@ -49,6 +52,8 @@ export default createVuetify({
 ### Flash of unstyled content (FOUC)
 
 If you're experiencing FOUC, then you're probably having some static/non-bundling setup. This is somewhat expected, since the HTML will always load faster than JS/CSS bundles (and especially fonts), probably most noticeable on first page load (browser cache should help a bit).
+
+Before all, make sure you're importing the CSS in the head as style, and not importing it into a JS module.
 
 To mitigate e.g. the wrong font flashing, use something like:
 

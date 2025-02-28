@@ -13,10 +13,12 @@ npm i @eox/ui
 ```
 
 ```css
+// style.css
 @import url("@eox/ui/style.css");
 ```
 
 ```js
+script.js
 import "@eox/ui";
 ```
 

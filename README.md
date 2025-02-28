@@ -18,7 +18,7 @@ npm i @eox/ui
 ```
 
 ```js
-script.js
+// script.js
 import "@eox/ui";
 ```
 

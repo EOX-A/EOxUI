@@ -47,6 +47,9 @@ export default createVuetify({
 });
 ```
 
+## Documentation
+The CSS & JS package is built on top of [beercss](https://github.com/beercss/beercss). For documentation on how to use HTML structure, CSS helper classes & JS, refer to the docs on [beercss.com](https://www.beercss.com/).
+
 ## Caveats
 
 ### Flash of unstyled content (FOUC)

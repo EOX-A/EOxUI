@@ -4,6 +4,10 @@ Collection of styles and snippets for the EOX Design System. Includes JS, CSS an
 
 ## General usage
 
+The CSS & JS components are built on top of [beercss](https://github.com/beercss/beercss). For documentation on how to use HTML structure, CSS helper classes & JS, refer to the docs on [beercss.com](https://www.beercss.com/).
+
+### Node package installation
+
 ```sh
 npm i @eox/ui
 ```
@@ -18,7 +22,7 @@ import "@eox/ui";
 
 The JS bundle is only needed for components that require JS.
 
-## CDN
+### CDN usage
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@eox/ui/dist/style.css" />
@@ -28,6 +32,8 @@ The JS bundle is only needed for components that require JS.
 The JS bundle is only needed for components that require JS.
 
 ## Usage with Vuetify
+
+This package also provides a Vuetify blueprint and style, which helps Vuetify apps to adapt the same look&feel.
 
 ```sh
 npm i @eox/ui
@@ -46,9 +52,6 @@ export default createVuetify({
   blueprint: eox,
 });
 ```
-
-## Documentation
-The CSS & JS package is built on top of [beercss](https://github.com/beercss/beercss). For documentation on how to use HTML structure, CSS helper classes & JS, refer to the docs on [beercss.com](https://www.beercss.com/).
 
 ## Caveats
 

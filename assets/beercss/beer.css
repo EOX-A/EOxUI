@@ -101,7 +101,7 @@ body.dark {
   font-display: block;
   src:
     url("material-symbols-outlined.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/beercss@3.9.0/dist/cdn/material-symbols-outlined.woff2") format("woff2");
+    url("https://cdn.jsdelivr.net/npm/beercss@3.9.7/dist/cdn/material-symbols-outlined.woff2") format("woff2");
 }
 /* rounded icons */
 @font-face {
@@ -111,7 +111,7 @@ body.dark {
   font-display: block;
   src:
     url("material-symbols-rounded.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/beercss@3.9.0/dist/cdn/material-symbols-rounded.woff2") format("woff2");
+    url("https://cdn.jsdelivr.net/npm/beercss@3.9.7/dist/cdn/material-symbols-rounded.woff2") format("woff2");
 }
 /* sharp icons */
 @font-face {
@@ -121,7 +121,17 @@ body.dark {
   font-display: block;
   src:
     url("material-symbols-sharp.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/beercss@3.9.0/dist/cdn/material-symbols-sharp.woff2") format("woff2");
+    url("https://cdn.jsdelivr.net/npm/beercss@3.9.7/dist/cdn/material-symbols-sharp.woff2") format("woff2");
+}
+/* subset of only required icons */
+@font-face {
+  font-family: "Material Symbols Subset";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:
+    url("material-symbols-subset.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/beercss@3.9.7/dist/cdn/material-symbols-subset.woff2") format("woff2");
 }
 * {
   -webkit-tap-highlight-color: transparent;
@@ -1175,7 +1185,7 @@ body :is(:hover,:focus)::-webkit-scrollbar-thumb {
 :is(.circle, .square).round {
   border-radius: 1rem !important;
 }
-.border:not(table, .field, .list) {
+.border:not(table, .field, .list, menu) {
   box-sizing: border-box;
   border: 0.0625rem solid var(--outline);
   background-color: transparent;
@@ -1378,16 +1388,16 @@ body :is(:hover,:focus)::-webkit-scrollbar-thumb {
   display: flex;
   white-space: nowrap;
 }
-.tiny-space:not(nav, ol, ul, .row, .grid, table, .tooltip, .list) {
+.tiny-space:not(nav, ol, ul, .row, .grid, table, .tooltip, .list, menu) {
   block-size: 0.5rem;
 }
-:is(.space, .small-space):not(nav, ol, ul, .row, .grid, table, .tooltip, .list) {
+:is(.space, .small-space):not(nav, ol, ul, .row, .grid, table, .tooltip, .list, menu) {
   block-size: 1rem;
 }
-.medium-space:not(nav, ol, ul, .row, .grid, table, .tooltip, .list) {
+.medium-space:not(nav, ol, ul, .row, .grid, table, .tooltip, .list, menu) {
   block-size: 2rem;
 }
-.large-space:not(nav, ol, ul, .row, .grid, table, .tooltip, .list) {
+.large-space:not(nav, ol, ul, .row, .grid, table, .tooltip, .list, menu) {
   block-size: 3rem;
 }
 .responsive {
@@ -2023,7 +2033,12 @@ dialog.large {
   inline-size: 75%;
   block-size: 75%;
 }
-dialog:is(.active, [open], :popover-open) {
+dialog:is(.active, [open]) {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+dialog:popover-open {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, 0);
@@ -2083,7 +2098,10 @@ dialog.max {
   transform: translateY(4rem);
   background-color: var(--surface);
 }
-dialog:is(.active, [open], :popover-open):is(.left, .right, .top, .bottom, .max) {
+dialog:is(.active, [open]):is(.left, .right, .top, .bottom, .max) {
+  transform: translate(0, 0);
+}
+dialog:popover-open:is(.left, .right, .top, .bottom, .max) {
   transform: translate(0, 0);
 }
 dialog.small:is(.left, .right) {
@@ -3027,6 +3045,12 @@ menu > li > menu:hover {
   visibility: visible;
   transform: scale(1) translateY(100%);
 }
+menu.active.top,
+:not(menu, [data-ui]):focus-within > menu.top,
+menu > li:hover > menu.top,
+menu > li > menu.top:hover {
+  transform: scale(1) translateY(-100%);
+}
 menu * {
   white-space: inherit !important;
 }
@@ -3042,7 +3066,7 @@ menu > li > a:only-child {
   justify-content: flex-start;
   white-space: nowrap;
   gap: 1rem;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   min-block-size: 3rem;
   flex: 1;
   margin: 0 !important;
@@ -3051,9 +3075,9 @@ menu > li > a:only-child {
 menu > li:is(:hover, :focus, .active) {
   background-color: var(--active);
 }
-menu > li > :is(.max, a:only-child, .field:only-child),
+menu > li > :is(.max, .field),
 menu > li > a:only-child > .max,
-menu > li:has(.field) {
+menu > li:has(.field, a:only-child) {
   flex: 1;
   padding: 0;
   margin: 0;
@@ -3061,16 +3085,17 @@ menu > li:has(.field) {
 menu.min {
   inset: 0 0 auto 0;
   transform: none !important;
-  border-radius: inherit;
   background-color: var(--surface-variant) !important;
   color: var(--on-surface-variant) !important;
 }
 [dir=rtl] menu.min.right,
-menu.min.left {
+menu.min.left,
+menu.top.left {
   inset: 0 0 auto auto;
 }
 [dir=rtl] menu.min.left,
-menu.min.right {
+menu.min.right,
+menu.top {
   inset: 0 auto auto 0;
 }
 menu.max {
@@ -3088,12 +3113,19 @@ menu.no-wrap:is(.min, .max) {
   min-inline-size: 16rem;
 }
 [dir=rtl] menu.right,
-menu.left {
+[dir=rtl] menu.top.min.right,
+menu.left,
+menu.top.min.left {
   inset: auto 0 0 auto;
 }
 [dir=rtl] menu.left,
-menu.right {
+[dir=rtl] menu.top.min.left,
+menu.right,
+menu.top.min {
   inset: auto auto 0 0;
+}
+menu.top {
+  transform: scale(0.8) translateY(-120%);
 }
 menu:has(menu) {
   ---child: 1;
@@ -3112,6 +3144,31 @@ menu > li > :is(menu, menu.right),
 [dir=rtl] menu > li > :is(menu, menu.right),
 menu > li > menu.left {
   inset: auto 100% calc(3rem * (var(---child) - var(---type))) auto;
+}
+menu > li > :is(menu.top, menu.top.right),
+[dir=rtl] menu > li > menu.top.left {
+  inset: calc(3rem * (var(---child) - var(---type))) auto auto 100%;
+}
+[dir=rtl] menu > li > :is(menu.top, menu.top.right),
+menu > li > menu.top.left {
+  inset: calc(3rem * (var(---child) - var(---type))) 100% auto auto;
+}
+menu.no-space > li {
+  min-block-size: 2.5rem;
+}
+menu.medium-space > li {
+  min-block-size: 3.5rem;
+}
+menu.large-space > li {
+  min-block-size: 4rem;
+}
+menu.border > li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  background-color: var(--outline-variant);
+  inset: auto 0 0 0;
+  block-size: 0.0625rem;
+  inline-size: auto;
 }
 menu > li:nth-last-child(2) {
   ---child: 2;
@@ -3428,7 +3485,10 @@ dialog::backdrop {
   z-index: 100;
   transition: all var(--speed3), 0s background-color;
 }
-.overlay.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
 dialog:popover-open::backdrop {
   opacity: 1;
   visibility: visible;
@@ -4097,7 +4157,12 @@ progress.max + * {
 .snackbar.top {
   inset: 6rem auto auto 50%;
 }
-.snackbar:is(.active, :popover-open) {
+.snackbar:is(.active) {
+  visibility: visible;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.snackbar:popover-open {
   visibility: visible;
   transform: translate(-50%, 0);
   opacity: 1;

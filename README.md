@@ -27,8 +27,10 @@ The JS bundle is only needed for components that require JS.
 ### CDN usage
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@eox/ui/dist/style.css" />
-<script src="https://unpkg.com/@eox/ui"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eox/ui/dist/style.min.css" />
+<script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@eox/ui/+esm'
+</script>
 ```
 
 The JS bundle is only needed for components that require JS.

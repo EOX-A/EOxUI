@@ -29,7 +29,7 @@ The JS bundle is only needed for components that require JS.
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eox/ui/dist/style.min.css" />
 <script type="module">
-    import 'https://cdn.jsdelivr.net/npm/@eox/ui'
+    import 'https://cdn.jsdelivr.net/npm/@eox/ui/+esm'
 </script>
 ```
 

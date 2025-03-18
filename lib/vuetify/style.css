@@ -12,7 +12,7 @@ html {
     Arial,
     sans-serif;
 }
-.v-application .v-theme--light {
+.v-application .v-theme--light, :root .v-theme--light {
   --v-theme-background: var(--eox-theme-light-background);
   --v-theme-error-container: var(--eox-theme-light-error-container);
   --v-theme-error: var(--eox-theme-light-error);
@@ -81,6 +81,7 @@ html {
   --v-theme-on-surface-container: var(--eox-theme-light-on-surface-container);
   --v-theme-on-surface-dim: var(--eox-theme-light-on-surface-dim);
   --v-theme-on-surface-light: var(--eox-theme-light-on-surface-light);
+  /* --v-theme-on-surface-darker: var(--eox-theme-light-on-surface-darker); */
   --v-theme-on-surface-tint: var(--eox-theme-light-on-surface-tint);
   --v-theme-on-surface: var(--eox-theme-light-on-surface);
   --v-theme-on-tertiary-container: var(--eox-theme-light-on-tertiary-container);
@@ -125,6 +126,7 @@ html {
   --v-theme-surface-container: var(--eox-theme-light-surface-container);
   --v-theme-surface-dim: var(--eox-theme-light-surface-dim);
   --v-theme-surface-light: var(--eox-theme-light-surface-light);
+  --v-theme-surface-darker: var(--eox-theme-light-surface-darker);
   --v-theme-surface-tint: var(--eox-theme-light-surface-tint);
   --v-theme-surface: var(--eox-theme-light-surface);
   --v-theme-tertiary-container: var(--eox-theme-light-tertiary-container);
@@ -135,7 +137,7 @@ html {
   );
   --v-theme-tertiary: var(--eox-theme-light-tertiary);
 }
-.v-application .v-theme--dark {
+.v-application .v-theme--dark, :root .v-theme--dark {
   --v-theme-background: var(--eox-theme-dark-background);
   --v-theme-error-container: var(--eox-theme-dark-error-container);
   --v-theme-error: var(--eox-theme-dark-error);
@@ -204,6 +206,7 @@ html {
   --v-theme-on-surface-container: var(--eox-theme-dark-on-surface-container);
   --v-theme-on-surface-dim: var(--eox-theme-dark-on-surface-dim);
   --v-theme-on-surface-light: var(--eox-theme-dark-on-surface-light);
+  /* --v-theme-on-surface-darker: var(--eox-theme-dark-on-surface-darker); */
   --v-theme-on-surface-tint: var(--eox-theme-dark-on-surface-tint);
   --v-theme-on-surface: var(--eox-theme-dark-on-surface);
   --v-theme-on-tertiary-container: var(--eox-theme-dark-on-tertiary-container);
@@ -248,6 +251,7 @@ html {
   --v-theme-surface-container: var(--eox-theme-dark-surface-container);
   --v-theme-surface-dim: var(--eox-theme-dark-surface-dim);
   --v-theme-surface-light: var(--eox-theme-dark-surface-light);
+  --v-theme-surface-darker: var(--eox-theme-dark-surface-darker);
   --v-theme-surface-tint: var(--eox-theme-dark-surface-tint);
   --v-theme-surface: var(--eox-theme-dark-surface);
   --v-theme-tertiary-container: var(--eox-theme-dark-tertiary-container);

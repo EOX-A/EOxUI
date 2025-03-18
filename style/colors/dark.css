@@ -39,6 +39,7 @@
   --eox-theme-dark-on-surface-container: 255, 255, 255;
   --eox-theme-dark-on-surface-dim: 255, 255, 255;
   --eox-theme-dark-on-surface-light: 255, 255, 255;
+  --eox-theme-dark-on-surface-darker: 0, 0, 0;
   --eox-theme-dark-on-surface-tint: 0, 0, 0;
   --eox-theme-dark-on-surface: 226, 226, 231;
   --eox-theme-dark-on-tertiary-container: 225, 224, 255;
@@ -71,6 +72,7 @@
   --eox-theme-dark-surface-container: 30, 32, 35;
   --eox-theme-dark-surface-dim: 17, 19, 23;
   --eox-theme-dark-surface-light: 55, 57, 61;
+  --eox-theme-dark-surface-darker: 0, 27, 46;
   --eox-theme-dark-surface-tint: 158, 202, 255;
   --eox-theme-dark-surface: 17, 19, 23;
   --eox-theme-dark-tertiary-container: 62, 65, 124;

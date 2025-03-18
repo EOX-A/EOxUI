@@ -81,7 +81,6 @@ html {
   --v-theme-on-surface-container: var(--eox-theme-light-on-surface-container);
   --v-theme-on-surface-dim: var(--eox-theme-light-on-surface-dim);
   --v-theme-on-surface-light: var(--eox-theme-light-on-surface-light);
-  /* --v-theme-on-surface-darker: var(--eox-theme-light-on-surface-darker); */
   --v-theme-on-surface-tint: var(--eox-theme-light-on-surface-tint);
   --v-theme-on-surface: var(--eox-theme-light-on-surface);
   --v-theme-on-tertiary-container: var(--eox-theme-light-on-tertiary-container);
@@ -206,7 +205,6 @@ html {
   --v-theme-on-surface-container: var(--eox-theme-dark-on-surface-container);
   --v-theme-on-surface-dim: var(--eox-theme-dark-on-surface-dim);
   --v-theme-on-surface-light: var(--eox-theme-dark-on-surface-light);
-  /* --v-theme-on-surface-darker: var(--eox-theme-dark-on-surface-darker); */
   --v-theme-on-surface-tint: var(--eox-theme-dark-on-surface-tint);
   --v-theme-on-surface: var(--eox-theme-dark-on-surface);
   --v-theme-on-tertiary-container: var(--eox-theme-dark-on-tertiary-container);

@@ -1,6 +1,6 @@
 {
   "name": "@eox/ui",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "EOX UI styles & tools",
   "main": "./dist/eox-ui.umd.cjs",
   "module": "./dist/eox-ui.js",

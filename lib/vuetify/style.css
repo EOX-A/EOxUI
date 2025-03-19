@@ -12,7 +12,8 @@ html {
     Arial,
     sans-serif;
 }
-.v-application .v-theme--light, :root .v-theme--light {
+.v-application .v-theme--light,
+:root .v-theme--light {
   --v-theme-background: var(--eox-theme-light-background);
   --v-theme-error-container: var(--eox-theme-light-error-container);
   --v-theme-error: var(--eox-theme-light-error);
@@ -125,7 +126,6 @@ html {
   --v-theme-surface-container: var(--eox-theme-light-surface-container);
   --v-theme-surface-dim: var(--eox-theme-light-surface-dim);
   --v-theme-surface-light: var(--eox-theme-light-surface-light);
-  --v-theme-surface-darker: var(--eox-theme-light-surface-darker);
   --v-theme-surface-tint: var(--eox-theme-light-surface-tint);
   --v-theme-surface: var(--eox-theme-light-surface);
   --v-theme-tertiary-container: var(--eox-theme-light-tertiary-container);
@@ -136,7 +136,8 @@ html {
   );
   --v-theme-tertiary: var(--eox-theme-light-tertiary);
 }
-.v-application .v-theme--dark, :root .v-theme--dark {
+.v-application .v-theme--dark,
+:root .v-theme--dark {
   --v-theme-background: var(--eox-theme-dark-background);
   --v-theme-error-container: var(--eox-theme-dark-error-container);
   --v-theme-error: var(--eox-theme-dark-error);
@@ -249,7 +250,6 @@ html {
   --v-theme-surface-container: var(--eox-theme-dark-surface-container);
   --v-theme-surface-dim: var(--eox-theme-dark-surface-dim);
   --v-theme-surface-light: var(--eox-theme-dark-surface-light);
-  --v-theme-surface-darker: var(--eox-theme-dark-surface-darker);
   --v-theme-surface-tint: var(--eox-theme-dark-surface-tint);
   --v-theme-surface: var(--eox-theme-dark-surface);
   --v-theme-tertiary-container: var(--eox-theme-dark-tertiary-container);

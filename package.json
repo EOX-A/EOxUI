@@ -16,15 +16,13 @@
     "./style.css": "./dist/style.css"
   },
   "files": [
-    "assets",
     "dist",
     "lib",
     "style"
   ],
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "clone:beercss": "rm -rf assets/beercss && git clone --depth 1 --branch v3.9.7 https://github.com/beercss/beercss.git assets/tmp && cp -r assets/tmp/dist/cdn assets/beercss && rm -rf assets/tmp && rm assets/beercss/beer.min.css && rm assets/beercss/beer.min.js && rm assets/beercss/material-symbols-outlined.woff2 assets/beercss/material-symbols-rounded.woff2 assets/beercss/material-symbols-sharp.woff2",
+    "build": "node ./add-no-inline.js node_modules/beercss/dist/cdn/beer.min.css && vite build",
     "format": "npx prettier --write ."
   },
   "repository": {
@@ -40,5 +38,8 @@
   "devDependencies": {
     "@eox/eslint-config": "^2.0.0",
     "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "beercss": "^3.9.7"
   }
 }

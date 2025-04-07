@@ -14,4 +14,13 @@ export default defineConfig({
       fileName: "eox-ui",
     },
   },
+  experimental: {
+    renderBuiltUrl(filename, { hostType }) {
+      if (hostType === "css") {
+        return `./${filename}`;
+      } else {
+        return { relative: true };
+      }
+    },
+  },
 });

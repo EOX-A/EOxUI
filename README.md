@@ -29,7 +29,7 @@ The JS bundle is only needed for components that require JS.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@eox/ui/dist/style.min.css"
+  href="https://cdn.jsdelivr.net/npm/@eox/ui/dist/style.css"
 />
 <script type="module">
   import "https://cdn.jsdelivr.net/npm/@eox/ui/+esm";
@@ -91,3 +91,25 @@ To mitigate e.g. the wrong font flashing, use something like:
 ### Shadow DOM
 
 Need to include `@eox/ui/style.css` also "outside" in the light DOM (for vars and fonts).
+
+## Development
+
+```
+git update-index --skip-worktree playground.html
+npm install
+npm start
+```
+
+This opens the playground at http://localhost:5173/playground.html with hot-reloading.
+
+```
+npm run format
+```
+
+Formats the code base.
+
+```
+npm run build
+```
+
+Builds the library and replaces absolute links in styles with relative ones.

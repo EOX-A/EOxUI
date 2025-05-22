@@ -23,7 +23,8 @@
   "type": "module",
   "scripts": {
     "build": "node ./add-no-inline.js node_modules/beercss/dist/cdn/beer.min.css && vite build",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "start": "vite --open playground.html"
   },
   "repository": {
     "type": "git",

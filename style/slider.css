@@ -1,12 +1,15 @@
-input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium input, .slider.extra input) {
-  font-size: 1.5rem;
-  color: var(--primary);
+* {
   --thumb-height: 20px;
+  --thumb-width: 20px;
   --track-height: 6px;
   --track-color: var(--outline-variant);
   --brightness-hover: 100%;
   --brightness-down: 100%;
   --clip-edges: 4px;
+}
+input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium input, .slider.extra input) {
+  font-size: 1.5rem;
+  color: var(--primary);
   width: 100%;
   background: none;
   overflow: hidden;
@@ -34,6 +37,10 @@ input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium
 input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium input, .slider.extra input)::-webkit-slider-runnable-track,
 input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium input, .slider.extra input)::-webkit-slider-thumb {
   position: relative;
+}
+
+input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium input, .slider.extra input)::-webkit-slider-runnable-track {
+  border-radius: var(--track-height);
 }
 
 input[type="range"]:not(.slider input)::-webkit-slider-thumb {
@@ -148,16 +155,15 @@ input[type="range"]:not(.slider.large input, .slider.small input, .slider.medium
 
 /* === BeerCSS tiny slider styling only === */
 label.slider.tiny::before {
-  height: 4px;
+  height: var(--track-height);
   background: var(--outline-variant);
   clip-path: none;
 }
 
 label.slider.tiny > span,
 .slider.tiny > input[type="range"] + input[type="range"] ~ span {
-  height: 4px;
-  top: 8px;
-  z-index: 5;
+  height: var(--track-height);
+  top: var(--track-height) - 1;
   clip-path: none;
 }
 
@@ -188,4 +194,12 @@ tc-range-slider {
   --pointer-border: 0;
   --pointer-border-focus: 0;
   --pointer-border-hover: 0;
+  --pointer-width: var(--thumb-width, var(--thumb-height));
+  --pointer-height: var(--thumb-width, var(--thumb-height));
+  --pointer-shadow: 0;
+  --pointer-shadow-hover: 0;
+  --height: var(--track-height);
+  --panel-bg-border-radius: var(--track-height);
+  --panel-bg: var(--track-color);
+  --panel-bg-hover: var(--track-color);
 }

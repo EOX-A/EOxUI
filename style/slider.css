@@ -199,6 +199,7 @@ tc-range-slider {
   --pointer-shadow: 0;
   --pointer-shadow-hover: 0;
   --height: var(--track-height);
+  --width: 100%;
   --panel-bg-border-radius: var(--track-height);
   --panel-bg: var(--track-color);
   --panel-bg-hover: var(--track-color);

@@ -1,18 +1,22 @@
 :root {
   --eox-theme-dark-background: 30, 32, 35;
+  --eox-theme-dark-code: 52, 52, 52;
   --eox-theme-dark-error-container: 147, 0, 10;
   --eox-theme-dark-error: 255, 180, 171;
   --eox-theme-dark-inverse-on-surface: 46, 48, 52;
   --eox-theme-dark-inverse-primary: 49, 97, 146;
   --eox-theme-dark-inverse-surface: 226, 226, 231;
+  --eox-theme-dark-kbd: 33, 37, 41;
   --eox-theme-dark-neutral-palette-key-color: 117, 119, 123;
   --eox-theme-dark-neutral-variant-palette-key-color: 114, 119, 128;
   --eox-theme-dark-on-background: 255, 255, 255;
+  --eox-theme-dark-on-code: 204, 204, 204;
   --eox-theme-dark-on-error-container: 255, 180, 171;
   --eox-theme-dark-on-error: 105, 0, 5;
   --eox-theme-dark-on-inverse-on-surface: 255, 255, 255;
   --eox-theme-dark-on-inverse-primary: 158, 202, 255;
   --eox-theme-dark-on-inverse-surface: 0, 0, 0;
+  --eox-theme-dark-on-kbd: 255, 255, 255;
   --eox-theme-dark-on-neutral-palette-key-color: 255, 255, 255;
   --eox-theme-dark-on-neutral-variant-palette-key-color: 255, 255, 255;
   --eox-theme-dark-on-outline-variant: 255, 255, 255;
@@ -22,7 +26,7 @@
   --eox-theme-dark-on-primary-fixed-variant: 16, 73, 120;
   --eox-theme-dark-on-primary-fixed: 0, 29, 54;
   --eox-theme-dark-on-primary-palette-key-color: 255, 255, 255;
-  --eox-theme-dark-on-primary: 209, 228, 255;
+  --eox-theme-dark-on-primary: 0, 50, 88;
   --eox-theme-dark-on-scrim: 255, 255, 255;
   --eox-theme-dark-on-secondary-container: 184, 234, 255;
   --eox-theme-dark-on-secondary-fixed-dim: 0, 0, 0;
@@ -54,7 +58,7 @@
   --eox-theme-dark-primary-fixed-variant: 209, 228, 255;
   --eox-theme-dark-primary-fixed: 209, 228, 255;
   --eox-theme-dark-primary-palette-key-color: 0, 65, 112;
-  --eox-theme-dark-primary: 0, 65, 112;
+  --eox-theme-dark-primary: 158, 202, 255;
   --eox-theme-dark-scrim: 0, 0, 0;
   --eox-theme-dark-secondary-container: 15, 77, 95;
   --eox-theme-dark-secondary-fixed-dim: 154, 206, 228;

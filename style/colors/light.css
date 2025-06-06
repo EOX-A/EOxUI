@@ -1,18 +1,22 @@
 :root {
   --eox-theme-light-background: 237, 237, 242;
+  --eox-theme-light-code: 245, 245, 245;
   --eox-theme-light-error-container: 255, 218, 214;
   --eox-theme-light-error: 186, 26, 26;
   --eox-theme-light-inverse-on-surface: 240, 240, 245;
   --eox-theme-light-inverse-primary: 158, 202, 255;
   --eox-theme-light-inverse-surface: 46, 48, 52;
+  --eox-theme-light-kbd: 33, 37, 41;
   --eox-theme-light-neutral-palette-key-color: 117, 119, 123;
   --eox-theme-light-neutral-variant-palette-key-color: 114, 119, 128;
   --eox-theme-light-on-background: 0, 0, 0;
+  --eox-theme-light-on-code: 0, 0, 0;
   --eox-theme-light-on-error-container: 65, 0, 2;
   --eox-theme-light-on-error: 255, 255, 255;
   --eox-theme-light-on-inverse-on-surface: 0, 0, 0;
   --eox-theme-light-on-inverse-primary: 0, 0, 0;
   --eox-theme-light-on-inverse-surface: 255, 255, 255;
+  --eox-theme-light-on-kbd: 255, 255, 255;
   --eox-theme-light-on-neutral-palette-key-color: 255, 255, 255;
   --eox-theme-light-on-neutral-variant-palette-key-color: 255, 255, 255;
   --eox-theme-light-on-outline-variant: 0, 0, 0;

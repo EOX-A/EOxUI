@@ -61,41 +61,37 @@ body.dark {
   --primary: rgb(var(--eox-theme-dark-primary));
   --on-primary: rgb(var(--eox-theme-dark-on-primary));
   --primary-container: rgb(var(--eox-theme-dark-primary-container));
-  --on-primary-container: rgb(var(--eox-theme-dark-on-primary-container));
+  --on-primary-container: #d1e4ff;
   --secondary: rgb(var(--eox-theme-dark-secondary));
-  --on-secondary: rgb(var(--eox-theme-dark-on-secondary));
-  --secondary-container: rgb(var(--eox-theme-dark-secondary-container));
+  --secondary-container: #3b4858;
+  --on-secondary-container: #d7e3f7;
   --on-secondary-container: rgb(var(--eox-theme-dark-on-secondary-container));
   --tertiary: rgb(var(--eox-theme-dark-tertiary));
   --on-tertiary: rgb(var(--eox-theme-dark-on-tertiary));
-  --tertiary-container: rgb(var(--eox-theme-dark-tertiary-container));
-  --on-tertiary-container: rgb(var(--eox-theme-dark-on-tertiary-container));
+  --tertiary-container: #523f5f;
+  --on-tertiary-container: #f2daff;
   --error: rgb(var(--eox-theme-dark-error));
   --on-error: rgb(var(--eox-theme-dark-on-error));
-  --error-container: rgb(var(--eox-theme-dark-error-container));
-  --on-error-container: rgb(var(--eox-theme-dark-on-error-container));
+  --error-container: #93000a;
+  --on-error-container: #ffb4ab;
   --background: rgb(var(--eox-theme-dark-background));
-  --on-background: rgb(var(--eox-theme-dark-on-background));
+  --on-background: #e2e2e6;
   --surface: rgb(var(--eox-theme-dark-surface));
   --on-surface: rgb(var(--eox-theme-dark-on-surface));
-  --surface-variant: rgb(var(--eox-theme-dark-surface-variant));
-  --on-surface-variant: rgb(var(--eox-theme-dark-on-surface-variant));
+  --surface-variant: #43474e;
+  --on-surface-variant: #c3c7cf;
   --outline: rgb(var(--eox-theme-dark-outline));
   --outline-variant: rgb(var(--eox-theme-dark-outline-variant));
-  --shadow: rgb(var(--eox-theme-dark-shadow));
-  --scrim: rgb(var(--eox-theme-dark-scrim));
-  --inverse-surface: rgb(var(--eox-theme-dark-inverse-surface));
-  --inverse-on-surface: rgb(var(--eox-theme-dark-inverse-on-surface));
-  --inverse-primary: rgb(var(--eox-theme-dark-inverse-primary));
+  --shadow: #000000;
+  --scrim: #000000;
+  --inverse-surface: #e2e2e6;
+  --inverse-on-surface: #2f3033;
+  --inverse-primary: #0161a3;
   --surface-dim: rgb(var(--eox-theme-dark-surface-dim));
   --surface-bright: rgb(var(--eox-theme-dark-surface-bright));
-  --surface-container-lowest: rgb(
-    var(--eox-theme-dark-surface-container-lowest)
-  );
-  --surface-container-low: rgb(var(--eox-theme-dark-surface-container-low));
-  --surface-container: rgb(var(--eox-theme-dark-surface-container));
-  --surface-container-high: rgb(var(--eox-theme-dark-surface-container-high));
-  --surface-container-highest: rgb(
-    var(--eox-theme-dark-surface-container-highest)
-  );
+  --surface-container-lowest: #0d0e11;
+  --surface-container-low: #1a1c1e;
+  --surface-container: #1e2022;
+  --surface-container-high: #282a2d;
+  --surface-container-highest: #333538;
 }

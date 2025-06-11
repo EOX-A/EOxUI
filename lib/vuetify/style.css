@@ -136,6 +136,7 @@ html {
     --eox-theme-light-tertiary-palette-key-color
   );
   --v-theme-tertiary: var(--eox-theme-light-tertiary);
+  --v-theme-warning: var(--eox-theme-light-warning);
 }
 .v-application .v-theme--dark,
 :root .v-theme--dark {
@@ -260,4 +261,5 @@ html {
     --eox-theme-dark-tertiary-palette-key-color
   );
   --v-theme-tertiary: var(--eox-theme-dark-tertiary);
+  --v-theme-warning: var(--eox-theme-dark-warning);
 }

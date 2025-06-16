@@ -1,4 +1,4 @@
-* {
+:root {
   --eox-slider-thumb-height: 20px;
   --eox-slider-thumb-width: 20px;
   --eox-slider-track-height: 6px;
@@ -6,6 +6,7 @@
   --eox-slider-brightness-hover: 100%;
   --eox-slider-brightness-down: 100%;
   --eox-slider-clip-edges: 4px;
+  --eox-slider-margin: 1.125rem;
 }
 input[type="range"]:not(
     .slider.large input,
@@ -21,8 +22,8 @@ input[type="range"]:not(
 }
 
 input[type="range"]:not(.slider input[type="range"]) {
-  margin: 1.125rem;
-  width: calc(100% - 2.25rem);
+  margin: var(--eox-slider-margin);
+  width: 100%;
 }
 
 input[type="range"]:not(
@@ -377,5 +378,5 @@ tc-range-slider {
   --panel-bg-hover: var(--eox-slider-track-color);
 
   display: block;
-  margin: 1.125rem;
+  margin: var(--eox-slider-margin);
 }

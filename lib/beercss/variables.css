@@ -1,7 +1,12 @@
 :root {
+  /* Custom */
+  --eox-body-font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+    "Nimbus Sans", Noto Sans, Arial, sans-serif;
+  --eox-header-font-family: var(--eox-body-font-family);
+
+  /* BeerCSS */
   --size: 1rem;
-  --font: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
-    Noto Sans, Arial, sans-serif;
+  --font: var(--eox-body-font-family);
   --font-icon: "Material Symbols Subset";
   --speed1: 0.1s;
   --speed2: 0.2s;
@@ -16,6 +21,18 @@
   --bottom: env(safe-area-inset-bottom);
   --left: env(safe-area-inset-left);
   --right: env(safe-area-inset-right);
+}
+
+* {
+  font-family: var(--eox-body-font-family);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--eox-header-font-family);
 }
 
 :root,

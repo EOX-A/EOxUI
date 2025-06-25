@@ -41,6 +41,6 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "beercss": "^3.11.4"
+    "beercss": "3.11.11"
   }
 }

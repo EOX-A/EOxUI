@@ -62,3 +62,12 @@ h5.tiny {
 h6.tiny {
   font-size: 0.625rem;
 }
+
+/* Make links underlined by default and change color on hover
+see also https://github.com/beercss/beercss/issues/76 */
+.link {
+  text-decoration: underline;
+}
+.link:hover {
+  color: var(--on-primary-container) !important;
+}

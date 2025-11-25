@@ -9,9 +9,17 @@
       "import": "./dist/eox-ui.js",
       "require": "./dist/eox-ui.umd.cjs"
     },
+    "./beercss/*": {
+      "import": "./lib/beercss/*",
+      "require": "./lib/beercss/*"
+    },
     "./vuetify/*": {
       "import": "./lib/vuetify/*",
       "require": "./lib/vuetify/*"
+    },
+    "./style/*": {
+      "import": "./style/*",
+      "require": "./style/*"
     },
     "./style.css": "./dist/style.css"
   },

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EOxUI Slider Comparison</title>
+    <!-- We import our direct entry points for testing -->
+    <script type="module" src="lib/beercss/index.js"></script>
+    <!-- EOx specific fonts and styles -->
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/slider.css" />
+    <link rel="stylesheet" href="lib/vuetify/style.css" />
+    <style>
+      :root,
+      .light {
+        --primary: #004170 !important;
+      }
+    </style>
+
+    <!-- Vuetify 3 & MDI Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vuetify@3.5.0/dist/vuetify.min.css"
+    />
+
+    <!-- Toolcool Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/toolcool-range-slider@4.0.28/dist/toolcool-range-slider.min.js"></script>
+
+    <style>
+      /* Global Slider Alignment Variables to match slider.css */
+      /* These are the default values, feel free to play around */
+      :root,
+      body.light {
+        --eox-theme-light-primary: var(--primary);
+        --eox-slider-thumb-height: 20px;
+        --eox-slider-thumb-width: 20px;
+        --eox-slider-track-height: 6px;
+        --eox-slider-track-color: var(--outline-variant);
+        --eox-slider-brightness-hover: 100%;
+        --eox-slider-brightness-down: 100%;
+        --eox-slider-clip-edges: 4px;
+        --eox-slider-margin: 1.125rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="responsive">
+      <div class="large-space"></div>
+      <h1 class="bold">EOxUI Slider Alignment</h1>
+      <p class="large-text">
+        Consistency check for BeerCSS, Vuetify, and Toolcool Range Slider using
+        <code>style/slider.css</code>.
+      </p>
+
+      <!-- 1. BeerCSS Slider -->
+      <div class="slider-container">
+        <span class="framework-label">1. BeerCSS (Native Input)</span>
+        <div class="field no-margin middle-align">
+          <div class="slider tiny">
+            <input type="range" value="50" />
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Toolcool Range Slider -->
+      <div class="slider-container">
+        <span class="framework-label"
+          >2. Toolcool Range Slider (Preferred for Features)</span
+        >
+        <!-- 
+          The toolcool-range-slider is styled via style/slider.css 
+          to match the EOx look-and-feel.
+        -->
+        <tc-range-slider value="50"></tc-range-slider>
+      </div>
+
+      <!-- 3. Vuetify Slider -->
+      <div class="slider-container" id="vuetify-app">
+        <span class="framework-label">3. Vuetify 3 (EOx Blueprint)</span>
+        <v-app>
+          <v-main style="overflow: visible">
+            <v-slider v-model="sliderVal"></v-slider>
+          </v-main>
+        </v-app>
+      </div>
+    </main>
+
+    <!-- Vue/Vuetify Script for the demo -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.5.0/dist/vuetify.min.js"></script>
+
+    <script type="module">
+      import { eox } from "./lib/vuetify/blueprint.js";
+
+      const { createApp, ref } = Vue;
+      const { createVuetify } = Vuetify;
+
+      const vuetify = createVuetify({
+        blueprint: eox,
+      });
+
+      createApp({
+        setup() {
+          const sliderVal = ref(50);
+          return { sliderVal };
+        },
+      })
+        .use(vuetify)
+        .mount("#vuetify-app");
+    </script>
+  </body>
+</html>

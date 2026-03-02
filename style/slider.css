@@ -320,6 +320,16 @@ input[type="range"]:not(
 }
 
 /* === BeerCSS tiny slider styling only === */
+.slider.tiny {
+  --_track: var(--eox-slider-track-height);
+  --_track-color: var(--eox-slider-track-color) !important;
+  margin: var(--eox-slider-margin);
+}
+
+.slider.tiny::before {
+  background: var(--eox-slider-track-color);
+}
+
 label.slider.tiny::before {
   height: var(--eox-slider-track-height);
   background: var(--outline-variant);
@@ -352,6 +362,16 @@ label.slider.tiny > span,
   transform: scaleX(1);
 }
 
+.slider::before {
+  clip-path: none !important;
+}
+
+.slider > span:not([class]) {
+  inset: calc(50% - (var(--_track, 0) / 2)) var(--_end) auto var(--_start) !important;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* tc-range-slider styling */
 tc-range-slider {
   --panel-bg-fill: var(--primary);
@@ -369,8 +389,8 @@ tc-range-slider {
     --eox-slider-thumb-width,
     var(--eox-slider-thumb-height)
   );
-  --pointer-shadow: 0;
-  --pointer-shadow-hover: 0;
+  --pointer-shadow: 0 3px 4px #00000033;
+  --pointer-shadow-hover: 0 0 0 10px #0000000a;
   --height: var(--eox-slider-track-height);
   --width: 100%;
   --panel-bg-border-radius: var(--eox-slider-track-height);
@@ -378,5 +398,28 @@ tc-range-slider {
   --panel-bg-hover: var(--eox-slider-track-color);
 
   display: block;
+  margin: calc(var(--eox-slider-margin) + var(--eox-slider-thumb-height))
+    var(--eox-slider-margin);
+}
+
+/* Vuetify slider styling */
+.v-slider.v-input--horizontal {
   margin: var(--eox-slider-margin);
+}
+.v-slider.v-input--horizontal .v-slider-track {
+  height: calc(var(--eox-slider-track-height) + 2px) !important;
+  --v-slider-track-size: var(--eox-slider-track-height) !important;
+}
+.v-slider-track .v-slider-track__background {
+  background-color: var(--eox-slider-track-color) !important;
+}
+.v-slider-track__fill.bg-primary {
+  background-color: var(--primary) !important;
+  height: calc(var(--eox-slider-track-height)) !important;
+}
+.v-slider-track__background--opacity {
+  opacity: 1;
+}
+.v-slider-thumb__surface {
+  background: var(--primary);
 }

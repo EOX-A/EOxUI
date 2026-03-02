@@ -12,6 +12,44 @@ The CSS & JS components are built on top of [beercss](https://github.com/beercss
 npm i @eox/ui
 ```
 
+### Visual Benchmarks (Playgrounds)
+
+You can verify the design system components in the following playgrounds:
+
+- [HTML/BeerCSS Playground](playground.html): The primary Material 3 reference implementation.
+- [Vuetify/EOx Blueprint Playground](vuetify.html): Implementation demonstrating look-and-feel consistency across frameworks.
+- [Slider Comparison Playground](sliders.html): Demonstration of style alignment between BeerCSS, Vuetify, and Toolcool Range Slider.
+
+### Specialized Components
+
+#### Toolcool Range Slider
+
+For advanced slider features (range, multi-thumb, vertical, etc.), EOxUI provides optimized styles for the [Toolcool Range Slider](https://toolcool-range-slider.mzsoft.org/) web component.
+
+- **Usage**: Install `toolcool-range-slider` and import `@eox/ui/style/slider.css`.
+- **Default Styles**: EOxUI aligns the appearance of the Toolcool slider with BeerCSS and Vuetify sliders to ensure a consistent user experience.
+- **Reference**: View [sliders.html](sliders.html) for an implementation example.
+
+### Stability & Release Strategy (v1.0.0+)
+
+#### Semantic Versioning
+
+EOxUI follows a strict stability strategy synchronized with upstream dependencies:
+
+- **Major**: Breaking changes in EOxUI specific components or major BeerCSS migrations.
+- **Minor**: Minor version updates or feature additions (e.g., BeerCSS 4.0.x -> 4.1.x).
+- **Patch**: Maintenance, bug fixes, and pinned dependency updates (e.g., BeerCSS 4.0.3 -> 4.0.16).
+
+All core dependencies are **pinned** to exact versions to ensure visual regressions are strictly controlled.
+
+#### Running Tests
+
+Automated tests verify that dependencies remain pinned and the public API (exports) remains intact.
+
+```sh
+npm test
+```
+
 ```css
 // style.css
 @import url("@eox/ui/style.css");

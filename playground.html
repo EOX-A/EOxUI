@@ -4,47 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EOxUI Playground</title>
-    <script type="module" src="lib/beercss"></script>
+    <!-- We import our direct entry points for testing -->
+    <script type="module" src="lib/beercss/index.js"></script>
+    <!-- EOx specific fonts and styles -->
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/slider.css" />
+    <link rel="stylesheet" href="lib/vuetify/style.css" />
+    <style>
+      :root,
+      .light {
+        --primary: #004170 !important;
+      }
+    </style>
   </head>
   <body>
     <main class="responsive">
       <div class="large-space"></div>
       <h1 class="bold">EOxUI Playground</h1>
       <p class="large-text">
-        This playground is intended to try out the library during development.
+        This file is used for visual verification of components and themes.
       </p>
-      <p class="large-text">
-        For full documentation about Beer CSS, please refer to
-        <a href="https://www.beercss.com/" target="_blank" class="link"
-          >https://www.beercss.com</a
-        >
-        and the
-        <a
-          href="https://github.com/beercss/beercss/tree/main/docs"
-          target="_blank"
-          class="link"
-          >documentation files</a
-        >.
-      </p>
-      <hr class="large" />
-      <nav>
-        <button>
-          <i class="mdi mdi-home"></i>
-          <span>Hello World!</span>
-        </button>
-        <label class="switch">
-          <input type="checkbox" />
+
+      <!-- BEERCSS SECTION -->
+      <section id="beercss-elements">
+        <h2>BeerCSS Elements</h2>
+
+        <div class="space"></div>
+        <h5>Buttons & Badges</h5>
+        <nav>
+          <button>Standard</button>
+          <button class="primary">Primary</button>
+          <button class="secondary">Secondary</button>
+          <button class="circle extra">
+            <i class="mdi mdi-home"></i>
+            <div class="badge">1</div>
+          </button>
+          <button class="extend extra circle">
+            <i class="mdi mdi-send"></i>
+            <span>Extended FAB</span>
+          </button>
+          <nav class="group connected">
+            <button class="left-round">Group</button>
+            <button class="no-round">Of</button>
+            <button class="right-round">Buttons</button>
+          </nav>
+        </nav>
+
+        <div class="space"></div>
+        <h5>Inputs & Selection</h5>
+        <div class="grid">
+          <div class="s12 m6">
+            <div class="field label border">
+              <input type="text" placeholder=" " />
+              <label>Standard Field</label>
+            </div>
+          </div>
+          <div class="s12 m6">
+            <div class="field label border prefix">
+              <i class="mdi mdi-magnify"></i>
+              <input type="text" placeholder=" " />
+              <label>Field with Prefix</label>
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <label class="checkbox">
+            <input type="checkbox" checked />
+            <span>Checkbox</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="r1" checked />
+            <span>Radio</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span>Switch</span>
+          </label>
+        </nav>
+
+        <div class="space"></div>
+        <h5>Data & Sliders</h5>
+        <div class="slider tiny">
+          <input type="range" value="50" />
           <span></span>
-        </label>
-        <a>
-          <i class="mdi mdi-home"></i>
-          <div class="badge min"></div>
-        </a>
-        <label class="slider tiny">
-          <input type="range" value="25" />
-          <span></span>
-        </label>
-      </nav>
+          <div class="tooltip">%</div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EOxElement A</td>
+              <td>Stable</td>
+            </tr>
+            <tr>
+              <td>EOxElement B</td>
+              <td>Beta</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="large-space"></div>
     </main>
   </body>
 </html>

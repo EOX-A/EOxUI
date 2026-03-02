@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EOxUI Vuetify Playground</title>
+
+    <!-- Vuetify 3 Styles & MDI Fonts via CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vuetify@3.5.0/dist/vuetify.min.css"
+    />
+
+    <!-- EOx Specific Styles -->
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/slider.css" />
+    <link rel="stylesheet" href="lib/vuetify/style.css" />
+
+    <style>
+      :root {
+        --primary: #004170 !important;
+      }
+      [v-cloak] {
+        display: none;
+      }
+      #app {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <v-app style="background: transparent">
+        <v-main>
+          <v-container>
+            <h1 class="text-h4 font-weight-bold mb-4">
+              EOxUI Vuetify Playground
+            </h1>
+            <p class="mb-4">
+              This playground demonstrates the
+              <strong>EOx Vuetify Blueprint</strong>. The look and feel should
+              mirror the BeerCSS version.
+            </p>
+
+            <v-row>
+              <v-col cols="12" md="6">
+                <!-- V-BTN mirroring BeerCSS Buttons -->
+                <h2 class="text-h6 mb-2">Buttons & Icons</h2>
+                <div class="d-flex flex-wrap ga-4">
+                  <v-btn color="primary">Primary Btn</v-btn>
+                  <v-btn color="secondary">Secondary Btn</v-btn>
+                  <v-btn icon="mdi-home" variant="tonal"></v-btn>
+                  <v-btn prepend-icon="mdi-send">Extended FAB</v-btn>
+                </div>
+              </v-col>
+
+              <v-col cols="12" md="6">
+                <!-- V-TEXT-FIELD mirroring BeerCSS Fields -->
+                <h2 class="text-h6 mb-2">Form Elements</h2>
+                <v-text-field
+                  label="EOx Outlined Input"
+                  variant="outlined"
+                  prepend-inner-icon="mdi-magnify"
+                  persistent-placeholder
+                ></v-text-field>
+
+                <div class="d-flex flex-wrap ga-4">
+                  <v-checkbox
+                    label="Checkbox"
+                    density="compact"
+                    v-model="checkboxVal"
+                    hide-details
+                  ></v-checkbox>
+                  <v-radio-group inline hide-details v-model="radioVal">
+                    <v-radio label="Radio" value="1"></v-radio>
+                  </v-radio-group>
+                  <v-switch
+                    label="Switch"
+                    color="primary"
+                    inset
+                    hide-details
+                  ></v-switch>
+                </div>
+              </v-col>
+
+              <v-col cols="12">
+                <h2 class="text-h6 mb-2">Data & Indicators</h2>
+                <v-slider v-model="sliderVal" label="Slider"></v-slider>
+
+                <v-progress-linear
+                  indeterminate
+                  color="primary"
+                  height="6"
+                  rounded
+                ></v-progress-linear>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-main>
+      </v-app>
+    </div>
+
+    <!-- Vue 3 & Vuetify 3 via CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.5.0/dist/vuetify.min.js"></script>
+
+    <script type="module">
+      import { eox } from "./lib/vuetify/blueprint.js";
+
+      const { createApp, ref } = Vue;
+      const { createVuetify } = Vuetify;
+
+      const vuetify = createVuetify({
+        blueprint: eox, // Using the EOx blueprint from lib/vuetify/blueprint.js
+      });
+
+      createApp({
+        setup() {
+          const sliderVal = ref(50);
+          const checkboxVal = ref(true);
+          const radioVal = ref("1");
+          return { sliderVal, checkboxVal, radioVal };
+        },
+      })
+        .use(vuetify)
+        .mount("#app");
+    </script>
+  </body>
+</html>

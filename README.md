@@ -4,7 +4,7 @@ Collection of styles and snippets for the EOX Design System. Includes JS, CSS an
 
 ## General usage
 
-The CSS & JS components are built on top of [beercss](https://github.com/beercss/beercss). For documentation on how to use HTML structure, CSS helper classes & JS, refer to the docs on [beercss.com](https://www.beercss.com/).
+The CSS & JS components are built on top of [beercss](https://github.com/beercss/beercss). For documentation on how to use HTML structure, CSS helper classes & JS, refer to the docs on [beercss.com](https://www.beercss.com/). For usage with coding agents, please point them to https://github.com/beercss/beercss/blob/main/llms.md in order to get access to docs and usage examples.
 
 ### Node package installation
 

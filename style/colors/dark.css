@@ -1,5 +1,5 @@
 :root {
-  --eox-theme-dark-background: 26, 28, 30;
+  --eox-theme-dark-background: 30, 32, 35;
   --eox-theme-dark-code: 52, 52, 52;
   --eox-theme-dark-error-container: 147, 0, 10;
   --eox-theme-dark-error: 255, 180, 171;
@@ -67,7 +67,7 @@
   --eox-theme-dark-secondary-palette-key-color: 0, 69, 87;
   --eox-theme-dark-secondary: 154, 206, 228;
   --eox-theme-dark-shadow: 0, 0, 0;
-  --eox-theme-dark-surface-bright: 56, 57, 60;
+  --eox-theme-dark-surface-bright: 55, 57, 61;
   --eox-theme-dark-surface-container-high: 40, 42, 46;
   --eox-theme-dark-surface-container-highest: 51, 53, 56;
   --eox-theme-dark-surface-container-low: 26, 28, 31;
@@ -76,7 +76,7 @@
   --eox-theme-dark-surface-dim: 17, 19, 23;
   --eox-theme-dark-surface-light: 55, 57, 61;
   --eox-theme-dark-surface-tint: 158, 202, 255;
-  --eox-theme-dark-surface: 18, 19, 22;
+  --eox-theme-dark-surface: 17, 19, 23;
   --eox-theme-dark-tertiary-container: 62, 65, 124;
   --eox-theme-dark-tertiary-fixed-dim: 191, 193, 255;
   --eox-theme-dark-tertiary-fixed-variant: 225, 224, 255;

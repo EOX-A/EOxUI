@@ -71,3 +71,21 @@ see also https://github.com/beercss/beercss/issues/76 */
 .link:hover {
   color: var(--on-primary-container) !important;
 }
+
+/* Smoothly rotate icons in details summary if they have the 'rotate' class */
+details summary .rotate {
+  transition: transform 0.3s ease;
+}
+details[open]:not(.is-closing) summary .rotate {
+  transform: rotate(180deg);
+}
+
+details.fast-animate summary .rotate {
+  transition: transform 0.15s ease;
+}
+details.slow-animate summary .rotate {
+  transition: transform 0.5s ease;
+}
+details.no-animate summary .rotate {
+  transition: none;
+}

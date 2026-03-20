@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.0](https://github.com/EOX-A/EOxUI/compare/v1.0.1...v1.1.0) (2026-03-20)
+
+### Features
+
+- animated expansion panels ([#9](https://github.com/EOX-A/EOxUI/issues/9)) ([98074b5](https://github.com/EOX-A/EOxUI/commit/98074b5161eab839d556609a700862454561e7da))
+
 ## [1.0.1](https://github.com/EOX-A/EOxUI/compare/v1.0.0...v1.0.1) (2026-03-10)
 
 ### Bug Fixes

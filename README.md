@@ -22,6 +22,15 @@ You can verify the design system components in the following playgrounds:
 
 ### Specialized Components
 
+#### Expansion Panels (Accordion & Animated Details)
+
+EOxUI enhances native HTML `<details>` elements to function as modern accordions with smooth open/close animations and icon rotation.
+
+- **Usage**: Use the `<details>` component natively.
+- **Accordion Support**: Set the same `name` attribute on multiple `<details>` elements so only one remains open at a time (e.g. `<details name="accordionGroup">`).
+- **Icon Rotation**: Add the `rotate` class to an icon inside the `<summary>` (e.g., `<i class="mdi mdi-chevron-down rotate"></i>`) to animate it 180 degrees.
+- **Animation speed options**: Use `fast-animate` (150ms), `slow-animate` (500ms), or `no-animate` on the parent `<details>` tag (default is 300ms).
+
 #### Toolcool Range Slider
 
 For advanced slider features (range, multi-thumb, vertical, etc.), EOxUI provides optimized styles for the [Toolcool Range Slider](https://toolcool-range-slider.mzsoft.org/) web component.

@@ -56,6 +56,6 @@
     "vitest": "^4.0.18"
   },
   "dependencies": {
-    "beercss": "4.0.16"
+    "beercss": "4.0.21"
   }
 }

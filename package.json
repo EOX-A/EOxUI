@@ -46,6 +46,9 @@
     "url": "https://github.com/EOX-A/EOxUI/issues"
   },
   "homepage": "https://github.com/EOX-A/EOxUI#readme",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "devDependencies": {
     "@eox/eslint-config": "^2.0.0",
     "@release-it/conventional-changelog": "^10.0.5",
